@@ -1,0 +1,88 @@
+.container{
+    /* width: 80vh; */
+   font-size: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
+.check input:checked ~ .content {
+    text-decoration: line-through;
+  }
+  .check input ~ .content {
+    position: absolute;
+    left: 35px;
+  }
+.bottom{
+    /* width: 100%; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: rgb(199, 197, 197);
+}
+.bottom__div{
+    cursor:pointer;
+}
+.remove{
+    cursor:pointer;
+}
+#left{
+    display: flex;
+    justify-content: space-between;
+}
+.check{
+    position: relative;
+    /* display: block; */
+    -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* padding: 5px; */
+  
+}
+.check .custom{
+    position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border-radius: 100%;
+  border: 1px solid rgb(199, 197, 197);
+}
+.check input{
+    /* position: absolute; */
+    opacity: 0;
+    cursor: pointer;
+    /* height: 0;
+    width: 0; */
+}
+.check:hover input ~ .custom {
+    /* background-color: #ccc; */
+    border: 0.5px solid greenyellow;
+  }
+  .check input:checked ~ .custom {
+    border:0.5px solid greenyellow;
+  }
+  .custom:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .check input:checked ~ .custom:after {
+    display: block;
+  }
+  .check .custom:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid greenyellow;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

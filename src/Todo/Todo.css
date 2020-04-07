@@ -1,0 +1,22 @@
+.page__content{
+  width: 60vw 
+}
+.text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 100px;
+    padding: 5px 5px;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin: 0;
+    border: 0.5px solid  rgb(199, 197, 197);
+    /* border-width: 1px solid  rgb(199, 197, 197); */
+    /* background-color: rgb(199, 197, 197); */
+    padding: 0;
+}
